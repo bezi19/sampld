@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Sampld.Application\Sampld.Application.csproj"/>
+        <ProjectReference Include="..\Sampld.Domain\Sampld.Domain.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CSharpFunctionalExtensions" Version="3.6.0"/>
+        <PackageReference Include="FastEndpoints.Security" Version="6.0.0"/>
+        <PackageReference Include="FastEndpoints.Swagger" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="9.0.4"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.4"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4"/>
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Migrations\Users\"/>
+    </ItemGroup>
+
+</Project>

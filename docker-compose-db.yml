@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:17.4
+    platform: linux/amd64
+    container_name: sampld-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+      - ./docker/postgres_volume:/var/lib/postgresql/data
+  
